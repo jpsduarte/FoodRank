@@ -1,0 +1,44 @@
+projeto tradicional (https://gist.github.com/erkobridee/6933795)
+
+/root
+  /shared
+     - código compartilhado na aplicação | seguir o modelo de diretórios adotado em /app
+
+  /app
+    - código da aplicação em si
+
+    /scripts
+      /main
+        module.js (definição do nome do módulo principal da aplicação AngularJS)
+        routes.js (rodas da aplicação)
+        start.js (inicializa o módulo principal)
+
+      /components
+      /controllers
+      /resources
+        /mocks
+        resourceName.js
+        ...
+      /services
+      /factories
+      /...
+    /templates
+    /styles
+    /images
+    /...
+
+  /vendor
+    - código de terceiros [css|javascript|...] (jquery, twitter bootstrap, ...)    
+    /scripts
+    /styles
+    /images
+    ...
+
+  /test
+    /libs (jasmine)
+    /unit
+      - seguir o modelo de diretórios adotado em /app
+
+    SpecRunner.html
+
+  index.html (adicionar as referências aos js conforme a ordem de dependência entre os arquivos)
